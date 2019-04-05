@@ -98,7 +98,8 @@ for (i=0; i<graduates.length; i++) {
 console.log(contactInfo);
 
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
+/* Request 3: Find out how many universities have the string "Uni" included in their name. 
+Create a new array called uni that contains them all. Log the result. */
 const uni = [];
 
 for (i=0; i<graduates.length; i++) {
@@ -143,9 +144,7 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
-
-zooAnimals.map(item => lowerCase.push(item.animal_name.toLowerCase()));
+const lowerCase = zooAnimals.map(item => item.animal_name.toLowerCase());
 
 console.log(lowerCase); 
 
